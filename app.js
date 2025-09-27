@@ -22,3 +22,9 @@ addBtn.addEventListener('click', () => {
         taskInput.value = ''; 
     }
 });
+
+taskList.addEventListener('click', (e) => {
+    if (e.target.tagName === 'BUTTON' && e.target.textContent === 'Delete') {
+        e.target.parentElement.remove();
+    }
+});
